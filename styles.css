@@ -95,21 +95,27 @@ h2, h4, p {
     font-size : 16px;
 }
 .display_center {
+    display: inline-block;
     margin: 0;
-    display:inline-block;
     text-align: left;
     border: 2px solid white;
     border-radius: 10px;
     padding : 15px;
     color: white;
     font-size : 16px;
-    width: 60%;
+    width: 40%;
+    height: 400px;
     font-family: 'Josefin Sans', sans-serif;
 }
 .file_system {
-    display:block;
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
     text-align: left;
     vertical-align: top;
+    width: 20%;
+    height: 400px;
 }
 .tab_heading {
     text-align : center;
@@ -122,10 +128,49 @@ h2, h4, p {
     border: none;
     outline: none;
     transition: background 0.2s;
-    font-size: 20px;
-    padding: 5px;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
 
 }
 .file_button:hover {
     background: rgba(145, 145, 145, 0.2);
+}
+.file_button:active {
+    background: rgba(95, 95, 95, 0.2);
+}
+.submit_text {
+    font-family: 'Josefin Sans', sans-serif;
+    resize: none;
+    border-radius : 10px;
+    border: 2px solid white;
+    background: none;
+    outline: none;
+    padding : 10px;
+    color : white;
+    font-size : 16px;
+    width: 40%;
+    margin : 10px;
+}
+.submit_button {
+    margin: 10px;
+    border-radius : 10px;
+    border: 2px solid white;
+    font-family: 'Josefin Sans', sans-serif;
+    background : none;
+    outline: none;
+    padding : 10px;
+    color : white;
+    font-size : 16px;
+    opacity : 0.6;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition : background-color 0.4s, opacity 0.4s;
+}
+.submit_button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+.submit_button:active {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
 }

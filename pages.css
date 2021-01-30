@@ -11,5 +11,9 @@
 }
 
 #files {
-    width: 40%;
+    width: 60%;
+    display: inline-block;
+}
+#conclusion {
+    width: 80%;
 }
