@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<header>
+    <title>Abandoned Data</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel = "stylesheet" href = "pages.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</header>
+<body>
+    <div class = "small_spacer"></div>
+    <h1>Abandoned Data</h1>
+    <div class = "header_divider"></div>
+    <h3>A murder mystery game made of text.</h3>
+    <div class = "small_spacer"></div>
+    <div class = "tabs_container">
+        <button class = "tabs_button" onclick = "openTab('overview')">Overview</button>
+        <button class = "tabs_button" onclick = "openTab('files')">File System</button>
+        <button class = "tabs_button" onclick = "openTab('notes')">Notes</button>
+        <button class = "tabs_button" onclick = "openTab('conclusion')">Case Conclusion</button>
+    </div>
+    <div class = "small_spacer"></div>
+    <div id="overview" class="tab_content">
+        <h2>> The 1997 Murder of Royce Brown</h2>
+        <p>In 1997, Royce Brown was found left for dead in a back alley. 
+        He was brought to the hospital, but despite efforts died 32 minutes later.</p> 
+        <h2>> This is Your Job</h2>
+        <p>Two days ago a hard drive containing old case files was found. 
+        Every case on the hard drive was solved except one labeled "Royce97". 
+        Your job is to use the files in the folder to solve the case and bring justice to Royce's family.</p> 
+        <h2>> What's next?</h2>
+        <p>Click the file system to start investigating. 
+        There are four categories of evidence {POI(person of interest) interviews, crime scene report, suspects and victim backgrounds, redacted phone messages}. 
+        Use each of the pieces of evidence to write down notes and come to a conclusion.
+        </p> 
+    </div>
+    
+    <div id="files" class="tab_content">
+        <h2 class="tab_heading">Os :: 16 > Documents > Cases > Royce97 ></h2>
+        <div class = "file_system">
+            <button class = "file_button" onclick = "openFolder('Royce97')">Royce97</button>
+            <div id = "Royce97">
+                <button class = "file_button" onclick = "openFolder('POIs')">POIs</button>
+                <div id = "POIs">
+                    <button class = "file_button">Royce Brown</button>
+                    <button class = "file_button">Royce Brown</button>
+                    <button class = "file_button">Royce Brown</button>
+                </div>
+                <button class = "file_button">Autopsy Report</button>
+            </div>
+        </div>
+        <div class = "display_center">
+            Click the file system to start investigating. 
+        There are four categories of evidence {POI(person of interest) interviews, crime scene report, suspects and victim backgrounds, redacted phone messages}. 
+        Use each of the pieces of evidence to write down notes and come to a conclusion.
+        </div>
+    </div>
+
+    <div id="notes" class="tab_content">
+        <h2 class="tab_heading">Case Notes:</h2>
+        <textarea placeholder = " - Notes go here" class = "notes"></textarea>
+    </div>
+
+    <div id="conclusion" class="tab_content">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <script src = "app.js"></script>
+    <script src = "file.js"></script>
+</body>
