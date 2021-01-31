@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <header>
     <title>Abandoned Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "styles.css">
     <link rel = "stylesheet" href = "pages.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,7 +19,7 @@
         <button class = "tabs_button" onclick = "openTab('overview')">Overview</button>
         <button class = "tabs_button" onclick = "openTab('files')">File System</button>
         <button class = "tabs_button" onclick = "openTab('notes')">Notes</button>
-        <button class = "tabs_button" onclick = "openTab('conclusion')">Case Conclusion</button>
+        <button class = "tabs_button" onclick = "openTab('conclusion')">Conclusion</button>
     </div>
     <div class = "small_spacer"></div>
     <div id="overview" class="tab_content">
@@ -37,26 +38,16 @@
     </div>
     
     <div id="files" class="tab_content">
-        <h2 class="tab_heading">Os :: 16 > Documents > Cases > Royce97 ></h2>
+        <h2 class="tab_heading">Os :: 16 > Documents > Cases ></h2>
         <div class = "display_center" id = "display_center">
-        <h2>File Display</h2>
-        <p>Click the file system to start investigating. 
-        There are four categories of evidence {POI(person of interest) interviews, crime scene report, suspects and victim backgrounds, redacted phone messages}. 
-        Use each of the pieces of evidence to write down notes and come to a conclusion.
-        </p>
+            <h2>File Display</h2>
+            <p>Click the file system to start investigating. 
+            There are four categories of evidence {POI(person of interest) interviews, crime scene report, suspects and victim backgrounds, redacted phone messages}. 
+            Use each of the pieces of evidence to write down notes and come to a conclusion.
+            </p>
         </div>
         <div class = "file_system" id = "file_system">
             <h2>File System</h2>
-            <button class = "file_button" onclick = "openFolder('Royce97')">> Royce97</button>
-            <div id = "Royce97">
-                <button class = "file_button" onclick = "openFolder('POIs')">> POIs</button>
-                <div id = "POIs">
-                    <button class = "file_button" onclick = "openFile('Royce Brown')">Royce_Brown.txt</button>
-                    <button class = "file_button" onclick = "openFile('Oscar Ford')">Oscar_Ford.txt</button>
-                    <button class = "file_button" onclick = "openFile('Chloe Hall')">Chloe_Hall.txt</button>
-                </div>
-                <button class = "file_button">> Autopsy Report</button>
-            </div>
         </div>
     </div>
 
@@ -67,10 +58,13 @@
 
     <div id="conclusion" class="tab_content">
         <h2 class = "tab_heading">Conclusion</h2>
-        <input class = "submit_text" type = "text" placeholder = "Full name of murderer"></input>
-        <button class = "submit_button">Submit Case Conclusion</button>
+        <input id = "guess" class = "submit_text" type = "text" placeholder = "Full name of murderer"></input>
+        <button class = "submit_button" onclick = "assertEqualName()">Submit Case Conclusion</button>
+        <div class = "small_spacer"></div>
+        <h3 id = "solution"></h3>
     </div>
 
+    <script src = "submit.js"></script>
     <script src = "app.js"></script>
     <script src = "file.js"></script>
 </body>

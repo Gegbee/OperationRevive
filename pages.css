@@ -3,11 +3,11 @@
     border-style: solid;
     border-width: 2px;
     border-color: white;
-    padding : 40px;
-    width : 40%;
+    padding : 30px;
+    width : 60%;
 }
 #notes {
-    width : 40%;
+    width : 60%;
 }
 
 #files {
@@ -15,5 +15,5 @@
     display: inline-block;
 }
 #conclusion {
-    width: 80%;
+    width: 60%;
 }

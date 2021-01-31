@@ -1,3 +1,5 @@
+const minWidth = 1200;
+
 openTab('overview');
 function openTab(name) {
     var tabcontent = document.getElementsByClassName("tab_content");
@@ -9,3 +11,23 @@ function openTab(name) {
     document.getElementById(name).style.display = "inline-block";
 }
 
+function changeWidth(percentage) {
+    var overview = document.getElementById('overview');
+    var files = document.getElementById('files');
+    var notes = document.getElementById('notes');
+    var conclusion = document.getElementById('conclusion');
+    const widths = [overview, files, notes, conclusion];
+    for (width = 0; width < widths.length; width++) {
+        widths[width].style.width = percentage + "%";
+    }
+}
+
+function checkResize() {
+    if (window.innerWidth < minWidth) {
+        changeWidth(80);
+    } else {
+        changeWidth(60);
+    }
+}
+window.addEventListener("resize", checkResize);
+checkResize();
