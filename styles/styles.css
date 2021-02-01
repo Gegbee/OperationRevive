@@ -18,6 +18,9 @@ h2, h4, p {
 .small_spacer {
     padding : 20px;
 }
+.large_spacer {
+    padding : 60px;
+}
 .tabs_container {
     margin: auto;
     text-align: center;
@@ -27,7 +30,7 @@ h2, h4, p {
     border-width : 0;
     font-family: 'Josefin Sans', sans-serif;
     border : none;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     outline: none;
     color : white;
     margin : 2px;
@@ -36,13 +39,15 @@ h2, h4, p {
     font-size : 15px;
     border-style: solid;
     background-color: rgba(0, 0, 0, 0.2);
-    transition : background-color 0.4s, opacity 0.4s, transform 0.4s;
+    transition : background-color 0.4s, opacity 0.4s, transform 0.4s, box-shadow 0.4s;
+    box-shadow: 0px 10px #3aa1f5c0;
 
 }   
 .tabs_button:hover {
     background-color: rgba(0, 0, 0, 0.3);
     opacity : 1;
     transform: scale(1.05, 1.05);
+    box-shadow: 0px 14px #3aa1f5c0;
 }
 .tabs_text {
     font-size : 16px;
@@ -86,7 +91,7 @@ h2, h4, p {
     margin: auto;
     width: 90%;
 	height: 300px;
-    border-radius : 10px;
+    /* border-radius : 10px; */
     border: 2px solid white;
     background: none;
     outline: none;
@@ -100,7 +105,7 @@ h2, h4, p {
     margin: 0;
     text-align: left;
     border: 2px solid white;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding : 15px;
     color: white;
     font-size : 16px;
@@ -111,7 +116,7 @@ h2, h4, p {
 .file_system {
     /* border: 2px solid white; */
     padding: 15px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     display: inline-block;
     text-align: left;
     vertical-align: top;
@@ -132,7 +137,7 @@ h2, h4, p {
     transition: background 0.2s;
     font-size: 16px;
     padding: 8px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 
 }
 .file_button:hover {
@@ -144,7 +149,7 @@ h2, h4, p {
 .submit_text {
     font-family: 'Josefin Sans', sans-serif;
     resize: none;
-    border-radius : 10px;
+    /* border-radius : 10px; */
     border: 2px solid white;
     background: none;
     outline: none;
@@ -156,7 +161,7 @@ h2, h4, p {
 }
 .submit_button {
     margin: 10px;
-    border-radius : 10px;
+    /* border-radius : 10px; */
     border: 2px solid white;
     font-family: 'Josefin Sans', sans-serif;
     background : none;
@@ -179,4 +184,32 @@ h2, h4, p {
 #solution {
     margin: auto;
     text-align: center;
+}
+.bottom_bar {
+    width : 100%;
+    height : 40px;
+    background-color: rgba(72, 129, 216, 0.705);
+    bottom: 0;
+    position: fixed;
+}
+.bottom_text {
+    font-family: 'Josefin Sans', sans-serif;
+    color : white;
+    font-size : 16px;
+    text-align: center;
+    vertical-align: center;
+}
+.bottom_text:visited {
+    color :rgb(216, 166, 250);
+}
+#cookie_alert {
+    font-family: 'Josefin Sans', sans-serif;
+    color : white;
+    font-size : 16px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    opacity: 1.0;
+    transition: opacity 2s;
+    top: 10px;
 }

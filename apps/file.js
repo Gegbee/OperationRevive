@@ -47,7 +47,6 @@ function createFiles(folder) {
 function finishFiles() {
     system_nav.innerHTML = new_html;
     for (var folder = 0; folder <folders.length; folder++) {
-        console.log(folders[folder]);
         openFolder(folders[folder]);
     }
 }
