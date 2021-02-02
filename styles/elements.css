@@ -20,8 +20,6 @@ h2, h4, p {
     text-align :left;
 }
 
-
-
 /* SPACERS */
 .small_spacer {
     padding : 20px;
@@ -88,6 +86,7 @@ h2, h4, p {
     /* border-radius: 5px; */
     outline: none;
     color : white;
+    display:inline-block;
     margin : 2px;
     padding : 20px;
     opacity : 0.6;

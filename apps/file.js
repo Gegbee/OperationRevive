@@ -1,13 +1,64 @@
-const files = {};
-const file_system = game;
+const Royce97 = {
+    "Royce97" : {
+        "POIs" : {
+            "Oscar" : "Hello mario"
+        },
+        "Royce Brown" : "The victim of the murder.",
+        "Oscar Ford" : "",
+        "Chloe Hall" : "Divorced eeeeeadad eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee eeeeeeeeeeee eeeeeeeeeeeee eeeeeee eeeeeeeeeeeeeeeeee eeeeeeeeeeee eeeeeeeeee eeeeeeee eeeeeeeeee asdasdawife of Royce Brown.",
+        "Evidence" : {
+            "Chloeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" : "Divorced wife of Royce Brown.",
+            "Deez" : {
+                "Royce Brown" : "The victim of the murder.",
+                "Oscar Ford" : "Hello mario",
+            }
+        },
+        "crime Scene" : {
+            "Royce Brown" : "The victim of the murder.",
+            "Oscar Ford" : "Hello mario",
+            "Chloee" : "Divorced wife of Royce Brown."
+        }
+    }
+};
+const Josh78 = {
+    "Josh78" : {
+        "POIs" : {
+            "Oscar" : "Hello mario"
+        },
+        "Royce Brown" : "The victim of the murder.",
+        "Oscar Ford" : "",
+        "Chloe Hall" : "Divorced eeeeeadad eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee eeeeeeeeeeee eeeeeeeeeeeee eeeeeee eeeeeeeeeeeeeeeeee eeeeeeeeeeee eeeeeeeeee eeeeeeee eeeeeeeeee asdasdawife of Royce Brown.",
+        "Evidence" : {
+            "Chloeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" : "Divorced wife of Royce Brown.",
+            "Deez" : {
+                "Royce Brown" : "The victim of the murder.",
+                "Oscar Ford" : "Hello mario",
+            }
+        },
+        "crime Scene" : {
+            "Royce Brown" : "The victim of the murder.",
+            "Oscar Ford" : "Hello mario",
+            "Chloee" : "Divorced wife of Royce Brown."
+        }
+    }
+};
+var file_system = Royce97;
 
-var folders = [];
+function changeSystem(name) {
+    file_system = name;
+    console.log(name);
+}
+
 const display_center = document.getElementById('display_center');
 const system_nav = document.getElementById('file_system');
+var files = {};
+var folders = [];
 var new_html = "<h2>File System</h2>";
-
-createFiles(file_system);
-finishFiles();
+if (system_nav !== null && display_center !== null) {
+    system_nav.innerHTML = "";
+    createFiles(file_system);
+    finishFiles();
+}
 
 function createFiles(folder) {
     for (var file in folder) {
@@ -19,16 +70,13 @@ function createFiles(folder) {
         } else {
             new_html += "<button class = 'file_button' onclick =" + '"openFile(' + "'" + file + "'" + ')"' + ">"+ file + ".txt</button>";
             files[file] = folder[file];
-        }
-    }
-}
+}}}
 
 function finishFiles() {
     system_nav.innerHTML = new_html;
     for (var folder = 0; folder <folders.length; folder++) {
         openFolder(folders[folder]);
-    }
-}
+}}
 
 function openFolder(folder) {
     var folder = document.getElementById(folder);
@@ -37,11 +85,10 @@ function openFolder(folder) {
         folder.style.display = "block";
     } else {
         folder.style.display = "none";
-    }
-}
+}}
+
 function openFile(file) {
     var file_text = files[file];
     if (file_text !== null) {
         display_center.innerHTML = "<h2>File Display</h2><p>" + file_text + "</p>";
-    }
-}
+}}
