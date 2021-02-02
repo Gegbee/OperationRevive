@@ -1,4 +1,5 @@
-const minWidth = 1200;
+const tabsMinWidth = 1200;
+const buttonMinWidth = 500;
 
 openTab('overview');
 function openTab(name) {
@@ -11,22 +12,38 @@ function openTab(name) {
     document.getElementById(name).style.display = "inline-block";
 }
 
-function changeWidth(percentage) {
+function changeWidth(in_width) {
     var overview = document.getElementById('overview');
     var files = document.getElementById('files');
     var notes = document.getElementById('notes');
     var conclusion = document.getElementById('conclusion');
     const widths = [overview, files, notes, conclusion];
-    for (width = 0; width < widths.length; width++) {
-        widths[width].style.width = percentage + "%";
+    if (in_width === true) {
+        for (width = 0; width < widths.length; width++) {
+            widths[width].style.width = 80 + "%";
+        }
+    } else {
+        for (width = 0; width < widths.length; width++) {
+            widths[width].style.width = 60 + "%";
+        }
     }
 }
 
 function checkResize() {
-    if (window.innerWidth < minWidth) {
-        changeWidth(80);
+    const buttons = document.getElementsByClassName("button");
+    if (window.innerWidth < tabsMinWidth) {
+        changeWidth(true);
     } else {
-        changeWidth(60);
+        changeWidth(false);
+    }
+    if (window.innerWidth < buttonMinWidth) {
+        for (button = 0; button < buttons.length; button++) {
+            buttons[button].style.width = 80 + "%";
+        }
+    } else {
+        for (button = 0; button < buttons.length; button++) {
+            buttons[button].style.width = "auto";
+        }
     }
 }
 window.addEventListener("resize", checkResize);

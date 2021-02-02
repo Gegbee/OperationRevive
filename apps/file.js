@@ -1,26 +1,5 @@
 const files = {};
-const file_system = {
-    "Royce97" : {
-        "POIs" : {
-            "Oscar" : "Hello mario"
-        },
-        "Royce Brown" : "The victim of the murder.",
-        "Oscar Ford" : "",
-        "Chloe Hall" : "Divorced eeeeeadad eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee eeeeeeeeeeee eeeeeeeeeeeee eeeeeee eeeeeeeeeeeeeeeeee eeeeeeeeeeee eeeeeeeeee eeeeeeee eeeeeeeeee asdasdawife of Royce Brown.",
-        "Evidence" : {
-            "Chloeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" : "Divorced wife of Royce Brown.",
-            "Deez" : {
-                "Royce Brown" : "The victim of the murder.",
-                "Oscar Ford" : "Hello mario",
-            }
-        },
-        "crime Scene" : {
-            "Royce Brown" : "The victim of the murder.",
-            "Oscar Ford" : "Hello mario",
-            "Chloee" : "Divorced wife of Royce Brown."
-        }
-    }
-};
+const file_system = game;
 
 var folders = [];
 const display_center = document.getElementById('display_center');
