@@ -1,0 +1,164 @@
+/* TABS */
+
+.tabs_container {
+    margin: auto;
+    text-align: center;
+}
+.tabs_text {
+    font-size : 16px;
+}
+.tab_content {
+    opacity : 0.7;
+    visibility : hidden;
+    display : none;
+}
+
+
+
+/* NOTES */
+.notes {
+    margin: auto;
+    width: 90%;
+	height: 300px;
+    /* border-radius : 10px; */
+    border: 2px solid white;
+    background: none;
+    outline: none;
+    padding : 15px;
+    color : white;
+    font-size : 16px;
+    text-align : left;
+}
+
+
+
+/* FILES */
+.display_center {
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+    border: 2px solid white;
+    /* border-radius: 10px; */
+    padding : 15px;
+    color: white;
+    font-size : 16px;
+    width: 45%;
+    height: 260px;
+    overflow: auto;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.file_system {
+    border: 2px solid white;
+    padding: 15px;
+    /* border-radius: 10px; */
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 30%;
+    height: 260px;
+    overflow: auto;
+    white-space: pre-wrap;
+}
+.tab_heading {
+    margin: 15px;
+    text-align : center;
+}
+.file_button {
+    display : block;
+    font-family: 'Josefin Sans', sans-serif;
+    background: none;
+    color: white;
+    border: none;
+    outline: none;
+    white-space: nowrap;
+    transition: background 0.2s;
+    font-size: 16px;
+    padding: 8px;
+    /* border-radius: 5px; */
+
+}
+.file_button:hover {
+    background: rgba(145, 145, 145, 0.2);
+}
+.file_button:active {
+    background: rgba(95, 95, 95, 0.2);
+}
+
+
+
+/* CONCLUSION */
+.submit_text {
+    font-family: 'Josefin Sans', sans-serif;
+    resize: none;
+    /* border-radius : 10px; */
+    border: 2px solid white;
+    background: none;
+    outline: none;
+    padding : 10px;
+    color : white;
+    font-size : 16px;
+    width: 40%;
+    margin : 10px;
+}
+.submit_button {
+    margin: 10px;
+    /* border-radius : 10px; */
+    border: 2px solid white;
+    font-family: 'Josefin Sans', sans-serif;
+    background : none;
+    outline: none;
+    padding : 10px;
+    color : white;
+    font-size : 16px;
+    opacity : 0.6;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition : background-color 0.4s, opacity 0.4s;
+}
+.submit_button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+.submit_button:active {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+}
+#solution {
+    margin: auto;
+    text-align: center;
+}
+
+
+
+/* BOTTOM BAR */
+.bottom_bar {
+    width : 100%;
+    height : 40px;
+    background-color: rgba(72, 129, 216, 0.705);
+    bottom: 0;
+    position: fixed;
+}
+.bottom_text {
+    font-family: 'Josefin Sans', sans-serif;
+    color : white;
+    font-size : 16px;
+    text-align: center;
+    vertical-align: center;
+}
+.bottom_text:visited {
+    color :rgb(216, 166, 250);
+}
+
+
+
+/* SPECIAL ALERTS */
+#cookie_alert {
+    font-family: 'Josefin Sans', sans-serif;
+    color : white;
+    font-size : 16px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    opacity: 1.0;
+    transition: opacity 2s;
+    top: 10px;
+}

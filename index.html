@@ -2,7 +2,8 @@
 <header>
     <title>Abandoned Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "styles/styles.css">
+    <link rel = "stylesheet" href = "styles/elements.css">
+    <link rel = "stylesheet" href = "styles/specifics.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Syne+Mono&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,19 +19,22 @@
 </header>
 <body>
     <div class = "large_spacer"></div>
-    <h1 id = "page_title" class = "Logo">Operation<br>Revive</h1>
-    <div class = "header_divider"></div>
-    <h3 id = "page_title">A murder mystery game made using only text.</h3>
+    <p class = "logo">Operation</p><div class = "header_divider"></div><p class = "logo">REVIVE</p>
+    <div class = "small_spacer"></div>
+    <h3>A murder mystery game made using only text.</h3>
     <div class = "small_spacer"></div>
     <div class = "bottom_bar">
         <p class = "bottom_text">Want to learn more? <a href = "https://yello12.github.io" class = "bottom_text">Checkout my Github!</a></p>
     </div>
-    <!-- <div>
-        <l>
-            <button class = "game_button" onclick = "openGame('Royce97')"></button>
-            <button class = "game_button" onclick = "openGame('Josh78')"></button>
+    <div>
+        <l class = "list_display">
+            <button class = "button" onclick = "openGame('Royce97')">Case 1: Royce97</button>
+            <button class = "button" onclick = "openGame('Josh78')">Case 2: Josh78</button>
+            <button class = "button" onclick = "openGame('Royce97')">Case 1: Royce97</button>
+            <button class = "button" onclick = "openGame('Josh78')">Case 2: Josh78</button>
+            <button class = "button" onclick = "openGame('Royce97')">Case 1: Royce97</button>
         </l>
-    </div> -->
-    <p id = "cookie_alert"> |>   This website uses cookies (yum) to save game data! (╯°□°）╯︵ ┻━┻   <| </p>
-    <script src = "apps/load.js"></script>
+    </div>
+    <p id = "cookie_alert">This website uses cookies (yum) to save game data! (╯°□°）╯︵ ┻━┻ </p>
+    <script src = "apps/games.js"></script>
 </body>

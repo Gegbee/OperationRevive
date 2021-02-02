@@ -1,13 +1,12 @@
 # To-do List
 ## code
-- file page responsitivity
-- file page scrolling
-- cleanup css
-- home page
+- file page wider
 - revamping titles on mystery pages
 - add cookie alert
 - add cookies to save progress
 - research jsons
+- list buttons
+- going into different games
 ## stories
 - finish first story
 - complete story workflow
