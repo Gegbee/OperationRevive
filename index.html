@@ -8,14 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Syne+Mono&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <script>
-        setTimeout(function() {
-            document.getElementById("cookie_alert").style.display = "none";
-        }, 7000);
-        setTimeout(function() {
-            document.getElementById("cookie_alert").style.opacity = 0;
-        }, 5000);
-    </script>
 </header>
 <body>
     <div class = "large_spacer"></div>
@@ -24,16 +16,18 @@
     <h3>A murder mystery game made using only text.</h3>
     <div class = "small_spacer"></div>
     <div class = "bottom_bar">
-        <p class = "bottom_text">Want to learn more? <a href = "https://yello12.github.io" class = "bottom_text">Checkout my Github!</a></p>
+        <p class = "bottom_text">v1.0.0 | 
+            <a href = "https://yello12.github.io" class = "bottom_text">Portfolio</a>
+             | 
+            <a href = "https://github.com/Yello12" class = "bottom_text">Github</a>
+        </p>
     </div>
     <div>
         <l class = "list_display">
-            <a class = "button" onclick = "changeSystem(Royce97)" href = "page.html">Case 1: Royce97</a>
-            <a class = "button" onclick = "changeSystem(Josh78)"  href = "page.html">Case 2: Josh78</a>
+            <a class = "button" href = "page.html?Royce97">Case 1: Royce97</a>
+            <a class = "button" href = "page.html?Josh78">Case 2: Josh78</a>
         </l> 
     </div>
-    <p id = "cookie_alert">This website uses cookies (yum) to save game data! (╯°□°）╯︵ ┻━┻ </p>
-    <script src = "apps/file.js"></script>
     <script>
         function checkResize() {
             const buttons = document.getElementsByClassName("button");
