@@ -30,17 +30,10 @@
     </div>
     <script>
         function checkResize() {
-            const buttons = document.getElementsByClassName("button");
-            if (window.innerWidth < 500) {
-                for (button = 0; button < buttons.length; button++) {
-                    buttons[button].style.width = 80 + "%";
-                }
-            } else {
-                for (button = 0; button < buttons.length; button++) {
-                    buttons[button].style.width = "auto";
-                }
-            }
-        }
+        const buttons = document.getElementsByClassName("button");
+        if (window.innerWidth < 500) {
+        for (button = 0; button < buttons.length; button++) {buttons[button].style.width = 80 + "%";}
+        } else {for (button = 0; button < buttons.length; button++) {buttons[button].style.width = "auto";}}}
         window.addEventListener("resize", checkResize);
         checkResize();
     </script>
