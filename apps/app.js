@@ -45,5 +45,18 @@ function checkResize() {
         display_center.style.width = 80 + "%";system_nav.style.width = 80 + "%";
     } else {display_center.style.width = 50 + "%";system_nav.style.width = 35 + "%";}
 }
+// function load() {
+//     const page_background = document.getElementById("page_transition");
+//     page_background.style.animationName = "transition-f";
+//     page_background.style.animationPlayState = "running"; 
+//     setTimeout(function() {page_background.style.animationPlayState = "paused";}, 1000);
+// }
+// function unload() {
+//     const page_background = document.getElementById("page_transition");
+//     page_background.style.animationName = "transition-b";
+//     page_background.style.animationPlayState = "running"; 
+//     setTimeout(function() {page_background.style.animationPlayState = "paused";}, 1000);
+// }
+// window.addEventListener("load", load);
 window.addEventListener("resize", checkResize);
 checkResize();

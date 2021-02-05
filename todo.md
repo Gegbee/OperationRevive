@@ -1,7 +1,6 @@
 # To-do List
 ## code
-- cleanup html
-- transition between pages
+- polish
 ## stories
 - finish first story
 - complete story workflow

@@ -212,3 +212,26 @@
     transition: opacity 2s;
     top: 10px;
 }
+
+
+
+/* TRANSITIONS
+
+.page_transition {
+    width: 100%;
+    height : 100%;
+    position: fixed;
+    background-color:rgb(83, 142, 219);
+    animation: transition-f 0.8s ease-out 0.2s 1;
+    z-index: 2;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+@keyframes transition-f {
+    0%   {width: 100%;}
+    100%  {width: 0%;}
+}
+@keyframes transition-b {
+    0%   {width: 0%;}
+    100%  {width: 100%;}
+} */
